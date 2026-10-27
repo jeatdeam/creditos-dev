@@ -1,0 +1,112 @@
+/* estilos de los creditos: css normal (no tailwind) para que se vean igual en cualquier proyecto.
+   todas las clases empiezan con "cd-" para no chocar con las del proyecto. */
+
+.cd-creditos {
+    background-color: #171717;
+}
+
+.cd-contenido {
+    width: 90%;
+    margin: 0 auto;
+    padding: 4px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cd-texto {
+    font-family: 'Doto', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    color: #d4d4d4;
+}
+
+.cd-solo-celular { display: inline; }
+.cd-sin-celular { display: none; }
+
+.cd-enlace {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    transition: opacity .15s;
+}
+
+.cd-enlace:hover {
+    opacity: .8;
+}
+
+.cd-firma {
+    width: 205px;
+    height: 86px;
+    margin: -12px -28px -19px -38px;
+    flex-shrink: 0;
+}
+
+/* texto que se escribe: la capa invisible reserva el ancho del texto completo */
+.cd-escritura {
+    position: relative;
+    display: inline-grid;
+}
+
+.cd-escritura-capa {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    white-space: pre;
+}
+
+.cd-escritura-reserva {
+    visibility: hidden;
+}
+
+.cd-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    margin-bottom: -.15em;
+    margin-left: 2px;
+    background-color: #0369a1;
+}
+
+.cd-cursor-parpadeo {
+    animation: cd-cursor-parpadeo 1s steps(1) infinite;
+}
+
+@keyframes cd-cursor-parpadeo {
+    50% { opacity: 0; }
+}
+
+.cd-solo-lector {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+@media (min-width: 640px) {
+    .cd-contenido { gap: 16px; }
+    .cd-texto { font-size: 14px; }
+    .cd-solo-celular { display: none; }
+    .cd-sin-celular { display: inline; }
+}
+
+@media (min-width: 1024px) {
+    .cd-contenido { gap: 22px; }
+    .cd-firma {
+        width: 320px;
+        height: 134px;
+        margin: -18px -44px -29px -60px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .cd-contenido { width: 80%; }
+}
