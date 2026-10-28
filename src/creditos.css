@@ -101,14 +101,35 @@
     .cd-sin-celular { display: inline; }
 }
 
-/* escritorio: la franja mide 70px (8px de padding + 62px de firma visible). La firma se achica
-   proporcionalmente (x0.71) en vez de recortarse, y los margenes negativos se escalan igual */
+/* escritorio: la franja negra mide 70px y la firma conserva su tamaño (320x134): va en absolute y
+   sobresale hacia arriba, sobre el final del footer. Por abajo no puede salir (estiraria la pagina y
+   dejaria una franja blanca), asi que el recorte se amplia 40px hacia arriba: margen negativo +
+   padding transparente, con el fondo negro solo desde ahi. Esa zona transparente no recibe clics
+   para que los enlaces del footer que quedan debajo sigan funcionando */
 @media (min-width: 1024px) {
+    .cd-creditos {
+        position: relative;
+        margin-top: -40px;
+        padding-top: 40px;
+        background: linear-gradient(transparent 40px, #171717 40px);
+        pointer-events: none;
+    }
     .cd-contenido { gap: 22px; }
+    .cd-contenido > * { pointer-events: auto; }
+    /* el enlace ocupa solo la parte visible de la firma: 216x62 */
+    .cd-enlace {
+        position: relative;
+        width: 216px;
+        height: 62px;
+    }
     .cd-firma {
-        width: 228px;
-        height: 96px;
-        margin: -13px -31px -21px -43px;
+        position: absolute;
+        left: -60px;
+        top: -39px;
+        width: 320px;
+        height: 134px;
+        margin: 0;
+        pointer-events: none;
     }
 }
 
