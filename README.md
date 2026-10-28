@@ -7,7 +7,7 @@ firma animada de jeatdeam (Lottie). En celular usa el texto corto "Desarrollado 
 ## Instalar
 
 ```bash
-npm install github:jeatdeam/creditos-dev#v1.0.0
+npm install github:jeatdeam/creditos-dev#v1.0.1
 ```
 
 Necesita `react` (18 o más) y `lottie-web`. Si el proyecto no tiene `lottie-web`, npm lo
@@ -48,4 +48,4 @@ componente de cliente (`"use client"`).
    git push origin main v1.1.0
    ```
 
-4. En cada proyecto, cambia `#v1.0.0` por `#v1.1.0` y vuelve a correr `npm install`.
+4. En cada proyecto, cambia `#v1.0.1` por `#v1.1.0` y vuelve a correr `npm install`.

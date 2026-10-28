@@ -3,6 +3,9 @@
 
 .cd-creditos {
     background-color: #171717;
+    /* la firma tiene margenes negativos y al final se deshace en particulas que salen de la franja:
+       sin esto estiran la pagina y queda una franja blanca debajo de los creditos */
+    overflow: hidden;
 }
 
 .cd-contenido {
