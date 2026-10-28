@@ -101,12 +101,14 @@
     .cd-sin-celular { display: inline; }
 }
 
+/* escritorio: la franja mide 70px (8px de padding + 62px de firma visible). La firma se achica
+   proporcionalmente (x0.71) en vez de recortarse, y los margenes negativos se escalan igual */
 @media (min-width: 1024px) {
     .cd-contenido { gap: 22px; }
     .cd-firma {
-        width: 320px;
-        height: 134px;
-        margin: -18px -44px -29px -60px;
+        width: 228px;
+        height: 96px;
+        margin: -13px -31px -21px -43px;
     }
 }
 
