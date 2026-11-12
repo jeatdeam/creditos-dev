@@ -20,7 +20,7 @@ type PropsCreditos = {
 export const Creditos = ({
     texto = 'Desarrollado y diseñado por:',
     textoCorto = 'Desarrollado por:',
-    enlace = 'https://github.com/jeatdeam',
+    enlace = 'https://portfolio-one-lyart-hct7el25qi.vercel.app/',
     className,
 } : PropsCreditos) => {
 
