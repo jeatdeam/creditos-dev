@@ -98,7 +98,7 @@ var FUENTE_DOTO = "https://fonts.googleapis.com/css2?family=Doto:wght@700&displa
 var Creditos = ({
   texto = "Desarrollado y dise\xF1ado por:",
   textoCorto = "Desarrollado por:",
-  enlace = "https://github.com/jeatdeam",
+  enlace = "https://portfolio-one-lyart-hct7el25qi.vercel.app/",
   className
 }) => {
   useEffect3(() => {
@@ -111,7 +111,7 @@ var Creditos = ({
   return /* @__PURE__ */ jsx3("div", { className: `cd-creditos ${className ?? ""}`, children: /* @__PURE__ */ jsxs2("div", { className: "cd-contenido", children: [
     /* @__PURE__ */ jsx3("span", { className: "cd-solo-celular", children: /* @__PURE__ */ jsx3(TextoEscritura, { texto: textoCorto, className: "cd-texto" }) }),
     /* @__PURE__ */ jsx3("span", { className: "cd-sin-celular", children: /* @__PURE__ */ jsx3(TextoEscritura, { texto, className: "cd-texto" }) }),
-    /* @__PURE__ */ jsx3("a", { href: enlace, target: "_blank", rel: "noopener noreferrer", "aria-label": "Portafolio de jeatdeam en GitHub", className: "cd-enlace", children: /* @__PURE__ */ jsx3(AnimacionLottie, { datos: firmaJeatdeamDev_default, cuadroReposo: 130, className: "cd-firma" }) })
+    /* @__PURE__ */ jsx3("a", { href: enlace, target: "_blank", rel: "noopener noreferrer", "aria-label": "Portafolio de jeatdeam", className: "cd-enlace", children: /* @__PURE__ */ jsx3(AnimacionLottie, { datos: firmaJeatdeamDev_default, cuadroReposo: 130, className: "cd-firma" }) })
   ] }) });
 };
 export {

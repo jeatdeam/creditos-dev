@@ -1,6 +1,6 @@
 {
   "name": "creditos-dev",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Franja de créditos del desarrollador (jeatdeam) para el final del footer: texto que se tipea y firma animada en Lottie.",
   "author": "Paulo Aylas (jeatdeam)",
   "license": "UNLICENSED",
@@ -13,8 +13,12 @@
       "import": "./dist/index.js"
     }
   },
-  "files": ["dist"],
-  "sideEffects": ["*.css"],
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch"

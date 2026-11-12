@@ -43,7 +43,7 @@ export const Creditos = ({
                 <span className={"cd-sin-celular"}>
                     <TextoEscritura texto={texto} className={"cd-texto"}/>
                 </span>
-                <a href={enlace} target="_blank" rel="noopener noreferrer" aria-label={"Portafolio de jeatdeam en GitHub"} className={"cd-enlace"}>
+                <a href={enlace} target="_blank" rel="noopener noreferrer" aria-label={"Portafolio de jeatdeam"} className={"cd-enlace"}>
                     {/* la animacion es de 1000x420: la firma, la brocha y el "</>" ocupan ~66% del ancho y ~64% del alto, un poco a la derecha y arriba.
                         los margenes negativos recortan ese espacio vacio; al final se deshace en particulas y el ultimo cuadro queda vacio,
                         por eso con "reducir movimiento" se deja quieta en el cuadro 130, con la firma completa */}
